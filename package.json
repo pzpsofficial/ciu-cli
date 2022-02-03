@@ -9,7 +9,8 @@
     "stylelint": "stylelint src/**/*.scss --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "commitlint": "npx --no -- commitlint  --edit $1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "npx tsc"
   },
   "author": "Bartosz Karpiel",
   "license": "ISC",
@@ -22,6 +23,12 @@
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
     "prettier": "2.5.1",
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^9.0.0",
+    "conf": "^10.1.1"
   }
 }
